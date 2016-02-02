@@ -3468,6 +3468,53 @@ Source: DCJ0303.pdf</description>
 <smd name="8" x="-0.8" y="0.975" dx="0.5" dy="0.35" layer="1"/>
 <text x="0" y="1.3462" size="0.8128" layer="25" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="XT60_MALE">
+<pad name="+" x="3.5814" y="0" drill="4.5466" diameter="5.842"/>
+<pad name="-" x="-3.5814" y="0" drill="4.5466" diameter="5.842"/>
+<wire x1="-5.0038" y1="4.0894" x2="7.747" y2="4.0894" width="0.3048" layer="21"/>
+<wire x1="7.747" y1="4.0894" x2="7.747" y2="-4.0894" width="0.3048" layer="21"/>
+<wire x1="7.747" y1="-4.0894" x2="-5.0038" y2="-4.0894" width="0.3048" layer="21"/>
+<wire x1="-5.0038" y1="-4.0894" x2="-7.747" y2="-1.3716" width="0.3048" layer="21"/>
+<wire x1="-7.747" y1="-1.3716" x2="-7.747" y2="1.3716" width="0.3048" layer="21"/>
+<wire x1="-7.747" y1="1.3716" x2="-5.0038" y2="4.0894" width="0.3048" layer="21"/>
+<wire x1="-4.826" y1="5.842" x2="-2.286" y2="5.842" width="0.3048" layer="21"/>
+<wire x1="2.286" y1="5.842" x2="4.826" y2="5.842" width="0.3048" layer="21"/>
+<wire x1="3.556" y1="7.112" x2="3.556" y2="4.572" width="0.3048" layer="21"/>
+<wire x1="-5.0038" y1="4.0894" x2="7.747" y2="4.0894" width="0.3048" layer="22"/>
+<wire x1="7.747" y1="4.0894" x2="7.747" y2="-4.0894" width="0.3048" layer="22"/>
+<wire x1="-7.747" y1="1.3716" x2="-5.0038" y2="4.0894" width="0.3048" layer="22"/>
+<wire x1="-4.826" y1="5.842" x2="-2.286" y2="5.842" width="0.3048" layer="22"/>
+<wire x1="2.286" y1="5.842" x2="4.826" y2="5.842" width="0.3048" layer="22"/>
+<wire x1="3.556" y1="7.112" x2="3.556" y2="4.572" width="0.3048" layer="22"/>
+<wire x1="-7.747" y1="-1.3716" x2="-7.747" y2="1.3716" width="0.3048" layer="22"/>
+<wire x1="-5.0038" y1="-4.0894" x2="-7.747" y2="-1.3716" width="0.3048" layer="22"/>
+<wire x1="7.747" y1="-4.0894" x2="-5.0038" y2="-4.0894" width="0.3048" layer="22"/>
+</package>
+<package name="ESC_PADS">
+<smd name="-" x="-3.81" y="0" dx="4.572" dy="5.588" layer="16" roundness="30" cream="no"/>
+<smd name="+" x="3.81" y="0" dx="4.572" dy="5.588" layer="16" roundness="30" cream="no"/>
+<wire x1="-4.572" y1="4.064" x2="-3.048" y2="4.064" width="0.127" layer="22"/>
+<wire x1="3.81" y1="3.302" x2="3.81" y2="4.826" width="0.127" layer="22"/>
+<wire x1="3.048" y1="4.064" x2="4.572" y2="4.064" width="0.127" layer="22"/>
+<hole x="2.286" y="2.032" drill="0.6"/>
+<hole x="3.302" y="2.032" drill="0.6"/>
+<hole x="4.318" y="2.032" drill="0.6"/>
+<hole x="5.334" y="2.032" drill="0.6"/>
+<hole x="2.794" y="1.016" drill="0.6"/>
+<hole x="3.81" y="1.016" drill="0.6"/>
+<hole x="4.826" y="1.016" drill="0.6"/>
+<hole x="5.334" y="0" drill="0.6"/>
+<hole x="4.318" y="0" drill="0.6"/>
+<hole x="3.302" y="0" drill="0.6"/>
+<hole x="2.286" y="0" drill="0.6"/>
+<hole x="2.794" y="-1.016" drill="0.6"/>
+<hole x="3.81" y="-1.016" drill="0.6"/>
+<hole x="4.826" y="-1.016" drill="0.6"/>
+<hole x="5.334" y="-2.032" drill="0.6"/>
+<hole x="4.318" y="-2.032" drill="0.6"/>
+<hole x="3.302" y="-2.032" drill="0.6"/>
+<hole x="2.286" y="-2.032" drill="0.6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="5-PIN_CONNECTOR">
@@ -4301,6 +4348,14 @@ Typical applications:&lt;p&gt;
 <pin name="VDDIO" x="-15.24" y="2.54" length="middle" direction="in"/>
 <text x="-10.16" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="POWER_CONNECTOR">
+<pin name="+" x="-5.08" y="2.54" length="middle"/>
+<pin name="-" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5785,6 +5840,43 @@ Source: DCJ0303.pdf</description>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER_CONNECTOR">
+<gates>
+<gate name="G$1" symbol="POWER_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="XT60_MALE" package="XT60_MALE">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ESC_PADS" package="ESC_PADS">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESC_PADS">
+<gates>
+<gate name="G$1" symbol="POWER_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
